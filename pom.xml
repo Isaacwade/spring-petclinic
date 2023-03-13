@@ -317,16 +317,7 @@
               <includePath>${project.build.directory}/webjars/META-INF/resources/webjars/bootstrap/${webjars-bootstrap.version}/scss/</includePath>
             </configuration>
           </plugin>
-          
-          <plugin>
-            <groupId>org.sonarsource.scanner.maven</groupId>
-            <artifactId>sonar-maven-plugin</artifactId>
-            <version>3.9.0.2155</version>
-            <configuration>
-                <sonar.host.url>http://54.165.104.13:9000/</sonar.host.url>
-                <sonar.login>53d7d71aaf1f455c5c17a62b5df7fa6c6a50698c</sonar.login>
-            </configuration>
-        </plugin>
+  
           
         </plugins>
       </build>
