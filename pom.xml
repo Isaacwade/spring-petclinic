@@ -13,17 +13,7 @@
   <name>petclinic</name>
 
   <properties>
-    <!-- SonarQube Credentials -->
-    
-    <jdk.version>1.8</jdk.version>
-		<spring.version>5.1.2.RELEASE</spring.version>
-		<junit.version>4.11</junit.version>
-		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://54.227.6.95:9000/</sonar.host.url>
-		<sonar.login>admin</sonar.login>
-		<sonar.password>admin</sonar.password>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
     
     <!-- Generic properties -->
     <java.version>17</java.version>
@@ -327,6 +317,17 @@
               <includePath>${project.build.directory}/webjars/META-INF/resources/webjars/bootstrap/${webjars-bootstrap.version}/scss/</includePath>
             </configuration>
           </plugin>
+          
+          <plugin>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.9.0.2155</version>
+            <configuration>
+                <sonar.host.url>http://54.165.104.13:9000/</sonar.host.url>
+                <sonar.login>53d7d71aaf1f455c5c17a62b5df7fa6c6a50698c</sonar.login>
+            </configuration>
+        </plugin>
+          
         </plugins>
       </build>
     </profile>
