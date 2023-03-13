@@ -381,6 +381,29 @@
                 </lifecycleMappingMetadata>
               </configuration>
             </plugin>
+            
+            <plugin>
+  <groupId>org.sonarsource.scanner.maven</groupId>
+  <artifactId>sonar-maven-plugin</artifactId>
+  <version>3.8.0.2131</version>
+  <executions>
+    <execution>
+      <id>sonarqube-analysis</id>
+      <phase>verify</phase>
+      <goals>
+        <goal>sonar</goal>
+      </goals>
+    </execution>
+  </executions>
+  <configuration>
+    <sonar.host.url>http://54.165.104.13/:9000</sonar.host.url>
+    <sonar.login>admin/sonar.login>
+    <sonar.password>admin</sonar.password>
+  </configuration>
+</plugin>
+
+            
+            
           </plugins>
         </pluginManagement>
       </build>
