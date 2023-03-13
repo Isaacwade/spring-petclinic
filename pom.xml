@@ -397,7 +397,7 @@
   </executions>
   <configuration>
     <sonar.host.url>http://54.165.104.13/:9000</sonar.host.url>
-    <sonar.login>admin/sonar.login>
+    <sonar.login>admin</sonar.login>
     <sonar.password>admin</sonar.password>
   </configuration>
 </plugin>
